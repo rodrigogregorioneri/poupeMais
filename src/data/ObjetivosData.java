@@ -17,4 +17,23 @@ public class ObjetivosData {
     public void setObjetivos(ArrayList<Objetivo> objetivos) {
         this.objetivos = objetivos;
     }
+
+    public void adicionaObjetivo(Objetivo objetivo){
+        System.out.println(objetivos.add(objetivo));
+    }
+
+    public void atualizaObjetivo(Objetivo objetivo, Objetivo newObjetivo){
+       if(objetivos.isEmpty()){
+           throw new IllegalArgumentException();
+       }
+       int index = objetivos.indexOf(objetivo);
+       objetivos.set(index, newObjetivo);
+    }
+
+    public void apagarObjetivo(Objetivo objetivo){
+        if(objetivos.isEmpty()){
+            throw new IllegalArgumentException();
+        }
+        objetivos.remove(objetivo);
+    }
 }
