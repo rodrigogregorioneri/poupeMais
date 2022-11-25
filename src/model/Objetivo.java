@@ -16,4 +16,16 @@ public class Objetivo {
         this.tempo_objetivo = tempo_objetivo;
         this.salario = salario;
     }
+
+    @Override
+    public String toString() {
+        return "Objetivo{" +
+                "nome_Objetivo='" + nome_Objetivo + '\'' +
+                ", responsavel_objetivo='" + responsavel_objetivo + '\'' +
+                ", tipo_objetivo='" + tipo_objetivo + '\'' +
+                ", valor_objetivo=" + valor_objetivo +
+                ", tempo_objetivo=" + tempo_objetivo +
+                ", salario=" + salario +
+                '}';
+    }
 }

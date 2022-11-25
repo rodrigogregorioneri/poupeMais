@@ -14,6 +14,9 @@ public class ObjetivosData {
         return objetivos;
     }
 
+
+
+
     public void setObjetivos(ArrayList<Objetivo> objetivos) {
         this.objetivos = objetivos;
     }
@@ -36,4 +39,10 @@ public class ObjetivosData {
         }
         objetivos.remove(objetivo);
     }
+
+    public void listarObjetivos(){
+        objetivos.forEach(o -> System.out.println(o.toString()));
+    }
+
+
 }

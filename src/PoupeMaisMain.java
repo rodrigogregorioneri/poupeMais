@@ -15,7 +15,18 @@ public class PoupeMaisMain {
         5,
         2000);
 
-        data.createObjetivos().add(objetivo);
+        Objetivo objetivo2 = new Objetivo(    "Casa Proprioa",
+                "Nina",
+                "casa",
+                450000,
+                5,
+                1000);
+
+        data.createObjetivos();
+        data.adicionaObjetivo(objetivo);
+        data.listarObjetivos();
+        data.adicionaObjetivo(objetivo);
+        data.listarObjetivos();
 
 
     }
